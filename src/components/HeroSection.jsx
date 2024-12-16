@@ -1,14 +1,18 @@
 import React from 'react';
+import backgroundImage from '../assets/nazar.jpg'; // Adjust the path as necessary
 
 const HeroSection = () => {
   return (
-    <div className="h-screen bg-gray-900 text-white flex items-center justify-center">
+    <div
+      className="h-screen bg-cover bg-center text-white flex items-center justify-center"
+      style={{ backgroundImage: `url(${backgroundImage})` }} // Apply the background image
+    >
       <div className="text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
-          Welcome to My Website
+          Sustainable Excellence in Palm Oil Estate
         </h1>
         <p className="text-lg md:text-2xl animate-slide-up">
-          Bringing ideas to life with smooth animations.
+          Harvesting National Commodity, Ensuring Future Sustainability
         </p>
       </div>
     </div>
@@ -16,3 +20,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
