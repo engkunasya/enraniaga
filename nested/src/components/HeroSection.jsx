@@ -8,8 +8,8 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }} // Apply the background image
     >
       <div className="text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
-          Sustainable Excellence in Palm Oil Estate
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
+        Redefining Sustainability in Palm Oil Plantation
         </h1>
         <p className="text-lg md:text-2xl animate-slide-up">
           Harvesting National Commodity, Ensuring Future Sustainability
