@@ -30,6 +30,7 @@ jobs:
         run: npm run build
         working-directory: nested
 
+<<<<<<< HEAD
       # Step 5: Deploy Built Files to Remote Server
       - name: Deploy Built Files to Remote Server
         uses: appleboy/ssh-action@master
@@ -37,11 +38,23 @@ jobs:
           host: ${{ secrets.SERVER_HOST }} # Server IP or domain
           username: ${{ secrets.SERVER_USER }} # SSH user
           key: ${{ secrets.SSH_PRIVATE_KEY }} # SSH private key
+=======
+
+      # Step 6: Deploy Built Files to Remote Server
+      - name: Deploy Built Files to Remote Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}           # Server IP or domain
+          username: ${{ secrets.SERVER_USER }}       # SSH user
+          key: ${{ secrets.SSH_PRIVATE_KEY }}        # SSH private key
+          
+>>>>>>> 257acf078f57a39069990b109d08a48e02f78ed9
           script: |
             echo "Starting deployment on remote server..."
 
             # Create the app directory if it doesn't exist
             mkdir -p /root/enraweb
+<<<<<<< HEAD
 
             # Navigate to the app directory
             cd /root/enraweb
@@ -50,19 +63,39 @@ jobs:
             if [ ! -d ".git" ]; then
                 echo "Cloning repository..."
                 git clone https://github.com/engkunasya/enraniaga.git .
+=======
+            
+            # Navigate to the app directory
+            cd /root/enraweb
+            
+            # Initialize Git and set up the remote repository
+            if [ ! -d ".git" ]; then
+                echo "Initializing Git repository..."
+                git init
+                git remote add origin https://github.com/engkunasya/enraniaga.git
+                git pull origin main
+>>>>>>> 257acf078f57a39069990b109d08a48e02f78ed9
             else
                 echo "Repository already exists. Pulling the latest code..."
                 git reset --hard
                 git pull origin main
             fi
+<<<<<<< HEAD
 
+=======
+            cd nested
+            npm install
+            npm run build
+            
+>>>>>>> 257acf078f57a39069990b109d08a48e02f78ed9
             # Remove old production files
             rm -rf /var/www/html/react-app/*
-
+            
             # Copy the 'dist' directory from the React app to the production directory
             cp -r /root/enraweb/nested/dist/* /var/www/html/react-app/
-
+            
             # Restart NGINX for the changes to take effect
             sudo systemctl restart nginx
-
+            
             echo "Deployment complete. Production build deployed!"
+
