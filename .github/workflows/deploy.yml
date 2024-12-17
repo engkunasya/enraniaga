@@ -44,27 +44,30 @@ jobs:
 
             # Create the app directory if it doesn't exist
             mkdir -p /root/enraweb
-
+            
             # Navigate to the app directory
             cd /root/enraweb
-
-            # Clone the repository if it's not already there
+            
+            # Initialize Git and set up the remote repository
             if [ ! -d ".git" ]; then
-                echo "Cloning repository..."
-                git clone https://github.com/engkunasya/enraniaga.git .
+                echo "Initializing Git repository..."
+                git init
+                git remote add origin https://github.com/engkunasya/enraniaga.git
+                git pull origin main
             else
                 echo "Repository already exists. Pulling the latest code..."
                 git reset --hard
                 git pull origin main
             fi
-
+            
             # Remove old production files
             rm -rf /var/www/html/react-app/*
-
+            
             # Copy the 'dist' directory from the React app to the production directory
             cp -r /root/enraweb/nested/dist/* /var/www/html/react-app/
-
+            
             # Restart NGINX for the changes to take effect
             sudo systemctl restart nginx
-
+            
             echo "Deployment complete. Production build deployed!"
+
