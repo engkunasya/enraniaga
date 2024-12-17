@@ -1,0 +1,66 @@
+name: Deploy to Remote Server
+
+on:
+  push:
+    branches:
+      - main # Trigger on push to the 'main' branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Specify the Node.js version
+
+      # Step 3: Navigate to the React app directory and install dependencies
+      - name: Install Dependencies
+        run: npm install
+        working-directory: nested
+
+      # Step 4: Build React App
+      - name: Build React App
+        run: npm run build
+        working-directory: nested
+
+      # Step 5: Test React App (optional)
+      - name: Test Production Build
+        run: |
+          echo "Testing production build..."
+          npm test
+        working-directory: nested
+
+      # Step 6: Deploy Built Files to Remote Server
+      - name: Deploy Built Files to Remote Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}           # Server IP or domain
+          username: ${{ secrets.SERVER_USER }}       # SSH user
+          key: ${{ secrets.SSH_PRIVATE_KEY }}        # SSH private key
+          script: |
+            echo "Starting deployment on remote server..."
+            
+            # Navigate to the app directory
+            cd /root/enraweb 
+            
+            # Reset any local changes and pull the latest code
+            git reset --hard
+            git pull origin main
+
+            # Remove old production files
+            rm -rf /var/www/html/react-app/*
+
+            # Copy the 'dist' directory from the React app to the production directory
+            cp -r /root/enraweb/nested/dist/* /var/www/html/react-app/
+
+            # Restart NGINX for the changes to take effect
+            sudo systemctl restart nginx
+
+            echo "Deployment complete. Production build deployed!"
