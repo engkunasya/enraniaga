@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Specify the Node.js version
+          node-version: "20" # Specify the Node.js version
 
       # Step 3: Navigate to the React app directory and install dependencies
       - name: Install Dependencies
@@ -30,24 +30,31 @@ jobs:
         run: npm run build
         working-directory: nested
 
-     
-
       # Step 5: Deploy Built Files to Remote Server
       - name: Deploy Built Files to Remote Server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SERVER_HOST }}           # Server IP or domain
-          username: ${{ secrets.SERVER_USER }}       # SSH user
-          key: ${{ secrets.SSH_PRIVATE_KEY }}        # SSH private key
+          host: ${{ secrets.SERVER_HOST }} # Server IP or domain
+          username: ${{ secrets.SERVER_USER }} # SSH user
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # SSH private key
           script: |
             echo "Starting deployment on remote server..."
-            
+
+            # Create the app directory if it doesn't exist
+            mkdir -p /root/enraweb
+
             # Navigate to the app directory
-            cd /root/enraweb 
-            
-            # Reset any local changes and pull the latest code
-            git reset --hard
-            git pull origin main
+            cd /root/enraweb
+
+            # Clone the repository if it's not already there
+            if [ ! -d ".git" ]; then
+                echo "Cloning repository..."
+                git clone https://github.com/engkunasya/enraniaga.git .
+            else
+                echo "Repository already exists. Pulling the latest code..."
+                git reset --hard
+                git pull origin main
+            fi
 
             # Remove old production files
             rm -rf /var/www/html/react-app/*
