@@ -25,38 +25,41 @@ import React from "react";
 
 const EnraNiagaLayout = () => {
   return (
-    <div className="w-full flex justify-center items-center px-6 py-16 bg-white">
-      <div className="max-w-4xl w-full text-left md:text-center justify-between">
-        <div>
-        {/* Focus Section */}
-        <h4 className="text-blue-600 text-lg font-semibold mb-4">Focus</h4>
+    <div className="flex justify-center items-center pt-20 bg-gray-100">
+    <div className="max-w-7xl w-full px-6">
+      {/* Outer Container */}
+      <div className="flex justify-between items-start flex-wrap">
+        {/* Left Side: Headline and Paragraph */}
+        <div className="max-w-lg mb-7">
+        <p
+    
+            className="text-blue-600 text-lg font-medium hover:underline"
+          >Resolution</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          A Vision for 2025: Refresh, Revitalize Pahang.
+          </h1>
+          <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+            Enra Niaga adopts sustainable farming techniques, blending
+            innovation and precision to transform the palm oil industry. From
+            plantation management to eco-friendly harvesting, we aim to
+            ensure quality production while protecting the environment and
+            empowering local communities.
+          </p>
+        </div>
 
-        {/* Main Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-snug">
-          Driving sustainability and innovation across palm oil agriculture with
-          advanced practices and eco-conscious solutions.
-        </h1>
-
-        {/* Supporting Paragraph */}
-        <p className="text-gray-600 text-lg leading-relaxed mb-8">
-          Enra Niaga adopts sustainable farming techniques, blending innovation
-          and precision to transform the palm oil industry. From plantation
-          management to eco-friendly harvesting, we aim to ensure quality
-          production while protecting the environment and empowering local
-          communities.
-        </p></div>
-
-        {/* Call to Action */}
-        <a
-          href="#"
-          className="text-blue-600 text-lg font-medium flex items-center justify-center hover:underline"
-        >
-          Explore our approach
-          <span className="ml-2">→</span>
-        </a>
+        {/* Right Side: Link */}
+        <div className="flex-shrink-0">
+          <a
+            href="#"
+            className="text-blue-600 text-lg font-medium hover:underline"
+          >
+            Explore our green →
+          </a>
+        </div>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default EnraNiagaLayout;
