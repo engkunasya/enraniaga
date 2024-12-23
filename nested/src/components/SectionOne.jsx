@@ -36,7 +36,7 @@ const EnraNiagaLayout = () => {
             className="text-blue-600 text-lg font-medium hover:underline"
           >Resolution</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-          A Vision for 2025: Refresh, Revitalize Pahang.
+          A Vision for 2025: Refresh for <i>New Pahang.</i>
           </h1>
           <p className="mt-4 text-gray-600 text-lg leading-relaxed">
             Enra Niaga adopts sustainable farming techniques, blending
@@ -53,7 +53,7 @@ const EnraNiagaLayout = () => {
             href="#"
             className="text-blue-600 text-lg font-medium hover:underline"
           >
-            Explore our green →
+            Explore our roadmap →
           </a>
         </div>
       </div>
