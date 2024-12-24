@@ -25,7 +25,7 @@ import React from "react";
 
 const EnraNiagaLayout = () => {
   return (
-    <div className="flex justify-center items-center pt-20 bg-gray-100">
+    <div className="flex justify-center items-center pt-20 bg-grey-50">
     <div className="max-w-7xl w-full px-6">
       {/* Outer Container */}
       <div className="flex justify-between items-start flex-wrap">
@@ -33,17 +33,13 @@ const EnraNiagaLayout = () => {
         <div className="max-w-lg mb-7">
         <p
     
-            className="text-blue-600 text-lg font-medium hover:underline"
+            className="text-blue-700 text-lg font-medium hover:underline"
           >Resolution</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-          A Vision for 2025: Refresh for <i>New Pahang.</i>
+          <h1 className="text-3xl md:text-4xl 2xl:text-5xl text-gray-900 leading-snug md:max-w-64 lg:max-w-96">
+          A Vision for <br/>2025: Redefine Pahang as the Greenest, Cleanest Food Powerhouse.
           </h1>
-          <p className="mt-4 text-gray-600 text-lg leading-relaxed">
-            Enra Niaga adopts sustainable farming techniques, blending
-            innovation and precision to transform the palm oil industry. From
-            plantation management to eco-friendly harvesting, we aim to
-            ensure quality production while protecting the environment and
-            empowering local communities.
+          <p className="mt-4 text-gray-900 text-lg leading-relaxed text-justify">
+          Enra Niaga (RA0099403-X) champions sustainable farming through partnerships with biologists from Australia and New Zealand. By integrating innovation and precision, we promote a health-focused approach to large-scale palm oil production. From ethical plantation estate management to premium cattle breeding, we are committed to delivering high-quality food chain outputs while preserving Pahang's natural ecosystem and uplifting local communities
           </p>
         </div>
 
@@ -51,7 +47,7 @@ const EnraNiagaLayout = () => {
         <div className="flex-shrink-0">
           <a
             href="#"
-            className="text-blue-600 text-lg font-medium hover:underline"
+            className="text-blue-700 text-lg font-medium hover:underline"
           >
             Explore our roadmap →
           </a>
