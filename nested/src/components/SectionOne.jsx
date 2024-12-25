@@ -36,7 +36,7 @@ const EnraNiagaLayout = () => {
             className="text-blue-700 text-lg font-medium hover:underline"
           >Vision</p>
           <h1 className="text-3xl md:text-4xl 2xl:text-5xl text-gray-900 leading-normal md:max-w-64 lg:max-w-96">
-          Leading Pahang Green Lung's Agenda in 2025-2030 with engineering and ESG principles.
+          Driving the Malaysia's Green Lung through engineering and ESG principles 2025.
           </h1>
           <p className="mt-4 text-gray-900 text-lg leading-relaxed text-justify">
           Enra Niaga <sup>(RA0099403-X)</sup> champions sustainable farming in Pahang through partnerships with stakeholders from Australia and New Zealand. By integrating innovation and precision, we promote a health-focused organic to large-scale palm oil production. From ethical plantation estate management to premium cattle breeding, we are committed to delivering high-quality food chain outputs with the same dedication to preserving both Pahang's natural ecosystem and uplifting <i>Orang Asli</i> and local communities
