@@ -27,7 +27,7 @@ import React from "react";
 const EnraNiagaLayout = () => {
   return (
     <div className="flex justify-center items-center pt-20 bg-grey-50">
-    <div className="max-w-7xl w-full px-20">
+    <div className="max-w-7xl w-full px-12">
       {/* Outer Container */}
       <div className="flex justify-between items-start flex-wrap">
         {/* Left Side: Headline and Paragraph */}
@@ -36,7 +36,7 @@ const EnraNiagaLayout = () => {
     
             className="text-blue-700 text-md font-bold pb-6"
           >Vision</p>
-          <h1 className="text-3xl md:text-4xl  text-gray-900 leading-normal md:max-w-64 lg:max-w-96">
+          <h1 className="text-3xl md:text-4xl  text-gray-900 leading-normal md:max-w-96">
           Accelerating sustainable growth in Pahang 2025 with leading science, engineering and ESG alignment.
           </h1>
           <p className="mt-4 text-gray-900 text-lg leading-relaxed text-justify">

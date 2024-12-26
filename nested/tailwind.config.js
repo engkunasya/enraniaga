@@ -19,6 +19,7 @@ export default {
         md: "850px",
         xl: "1180px",
         "2xl": "1280px",
+        "slb": "788px"
       },
       fontSize: {
         '7.5xl': '5rem',
