@@ -10,17 +10,17 @@ const SlideFeature = () => {
     },
     {
       id: 2,
-      title: 'Farm Engineering & Growth',
+      title: 'Estate Growth',
       content: 'Driving innovation in energy production while ensuring safety and efficiency.',
     },
     {
       id: 3,
-      title: 'Integrated Farming Systems (IFS / R&D)',
+      title: 'Integrated Farming Systems (IFS)',
       content: 'Creating clean and renewable energy systems to power a sustainable future.',
     },
     {
       id: 4,
-      title: 'Nature & Community Support',
+      title: 'Local Ecosystem',
       content: 'Driving innovation in energy production while ensuring safety and efficiency.',
     },
   ];

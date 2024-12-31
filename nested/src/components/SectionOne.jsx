@@ -36,11 +36,11 @@ const EnraNiagaLayout = () => {
     
             className="text-blue-700 text-md font-bold pb-6"
           >Vision</p>
-          <h1 className="text-3xl md:text-4xl  text-gray-900 leading-normal md:max-w-96">
-          Accelerating sustainable growth in Pahang 2025 with leading science, engineering and ESG alignment.
+          <h1 className="text-3xl md:text-4xl  text-gray-900 leading-snug md:max-w-96">
+          Accelerating suitable growth in Pahang 2025 with leading science, engineering and ESG alignment.
           </h1>
           <p className="mt-4 text-gray-900 text-lg leading-relaxed text-justify">
-          Enra is at the forefront of sustainable farming in Pahang, partnering with architects from Australia and New Zealand to drive innovation and excellence. <br/><br/>
+          Enra is at the forefront of sustainable farming in Pahang, partnering with architects from Australia and New Zealand to drive innovation and excellence in agriculture. <br/><br/>
           </p>
         </div>
 
