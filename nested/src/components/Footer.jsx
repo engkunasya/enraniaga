@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm pt-4">
           <p>Committed to Sustainability & Ethical Business Practices</p>
           <p className="mt-2 md:mt-0">Building a Greener Future, One Step at a Time</p>
-          <p className="mt-2 md:mt-0">&copy; 2025</p>
+          <p className="mt-2 md:mt-0">Enra Niaga &copy; 2025</p>
         </div>
       </div>
     </footer>
