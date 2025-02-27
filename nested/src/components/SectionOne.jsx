@@ -40,7 +40,7 @@ const EnraNiagaLayout = () => {
           Accelerating suitable growth in Pahang 2025 with leading science, engineering and ESG alignment.
           </h1>
           <p className="mt-4 text-gray-900 text-lg leading-relaxed text-justify">
-          Enra is at the forefront of sustainable farming in Pahang, partnering with architects from Australia and New Zealand to drive innovation and excellence in agriculture. <br/><br/>
+          Enra is at the forefront of sustainable farming in Pahang, partnering with importing stakeholders from Australia and New Zealand to drive innovation and excellence in palm oil agriculture. <br/><br/>
           </p>
         </div>
 

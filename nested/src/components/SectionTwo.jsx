@@ -1,18 +1,29 @@
 import React from 'react';
+import enraIV from '../assets/enra-iv.jpg'; // Adjust the path as necessary
 
 const SectionTwo = () => {
   return (
-    <div className="h-screen bg-gray-100 flex items-center justify-center">
-      <div className="flex flex-col md:flex-row items-center md:space-x-8">
+    <div className="bg-gray-100 flex items-center justify-center py-16 px-6">
+      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center md:items-start gap-12">
+        {/* Image Section */}
         <img 
-          src="https://via.placeholder.com/400" 
-          alt="Placeholder"
+          src={enraIV}
+          alt="Palm Oil Estate"
           className="w-full md:w-1/2 rounded-lg shadow-lg animate-slide-in-left"
         />
-        <div className="mt-6 md:mt-0">
-          <h3 className="text-3xl mb-2 text-gray-800">Rooted in Sustainability, Growing for Generations</h3>
-          <p className="text-gray-600">
-          With decades of expertise in sustainable palm oil production, our estate stands at the forefront of the agricultural sector, blending tradition with modern techniques. We are committed to delivering top-tier, fresh palm oil while safeguarding the environment. We prioritize transparency, efficiency, and collaboration to ensure that our operations are as ethical as they are profitable. Our estate is built on trust, quality, and environmental stewardship.
+
+        {/* Text Section */}
+        <div className="text-center md:text-left lg:max-w-lg">
+          <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+            Growing for Generations, and Regrowth.
+          </h3>
+          <p className="text-lg text-gray-600 leading-relaxed">
+          Since 1999, our Pahang estate has grown in the countryside of Kuantan, near historic town of Sungai Lembing. With decades in sustainable palm oil production, we balance tradition and modern practices to produce fresh, high-quality yields while respecting nature.
+
+
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed mt-4">
+          Guided by collaboration across local, state, federal and private enterprises, we focus on growing the right way—for today and the future.
           </p>
         </div>
       </div>
@@ -21,3 +32,4 @@ const SectionTwo = () => {
 };
 
 export default SectionTwo;
+
