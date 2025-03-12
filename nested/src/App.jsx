@@ -7,6 +7,8 @@ import SectionTwo from './components/SectionTwo';
 import Footer from './components/Footer';
 import EnraNiagaLayout from './components/SectionOne';
 import SlideFeature from './components/SlideFeature';
+import Partnership from './components/Partnership';
+
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <HeroSection />
      <EnraNiagaLayout/>
      {/* <SlideFeature/> */}
+     <Partnership/>
+
       <SectionTwo />
       
    
