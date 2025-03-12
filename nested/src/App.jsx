@@ -17,7 +17,7 @@ function App() {
       
       <HeroSection />
      <EnraNiagaLayout/>
-     <SlideFeature/>
+     {/* <SlideFeature/> */}
       <SectionTwo />
       
    
