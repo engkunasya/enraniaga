@@ -18,7 +18,7 @@ const SectionTwo = () => {
             Growing for Generations, and Regrowth.
           </h3>
           <p className="text-lg text-gray-600 leading-relaxed text-justify">
-          Since 1999, our 50-hectare estate in Pahang has flourished in the countryside of Kuantan, near the historic town of Sungai Lembing. Committed to sustainable palm oil and beef productions, we integrate responsible farming practices with modern techniques to ensure high-quality yields while preserving the environment for future generations.
+          Since 1999, our 50-hectare estate in Pahang has flourished in the countryside of Kuantan, near the historic town of Sungai Lembing. Committed to sustainable palm oil and beef productions, we integrate responsible farming practices with modern techniques to ensure high-quality yields of edible supply while preserving the environment for future generations.
 
 
           </p>
