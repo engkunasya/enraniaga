@@ -6,7 +6,7 @@ import logo4 from '../assets/gov.svg';
 import logo5 from '../assets/FGV.png';
 import logo6 from '../assets/jpj2.png';
 import logo7 from '../assets/BAT.jpg';
-import logo8 from '../assets/ramly.jpg';
+import logo8 from '../assets/ramly2.png';
 
 
 import './Partnership.css';
@@ -24,7 +24,7 @@ const Partnership = () => {
         <div className="marquee__logos">
           {/* Dynamically duplicate the logos instead of manually repeating */}
           {[...logos, ...logos].map((logo, index) => (
-            <img key={index} src={logo} alt={`Partner ${index + 1}`} className="h-10 mx-4" />
+            <img key={index} src={logo} alt={`Partner ${index + 1}`} className="h-16 mx-4" />
           ))}
         </div>
       </div>
