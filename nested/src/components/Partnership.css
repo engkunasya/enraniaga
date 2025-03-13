@@ -1,37 +1,49 @@
-
-
 .logos__marquee {
 	display: flex;
-	overflow-x: hidden;
+	overflow: hidden;
 	user-select: none;
+	white-space: nowrap;
+	position: relative;
 	mask-image: linear-gradient(
-		to right,
-		hsl(0 0% 0% / 0),
-		hsl(0 0% 0% / 1) 20%,
-		hsl(0 0% 0% / 1) 80%,
-		hsl(0 0% 0% / 0)
+	  to right,
+	  hsl(0 0% 0% / 0),
+	  hsl(0 0% 0% / 1) 10%,
+	  hsl(0 0% 0% / 1) 90%,
+	  hsl(0 0% 0% / 0)
 	);
-}
-
-.marquee__logos {
-	flex-shrink: 0;
+  }
+  
+  .marquee__logos {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	gap: 5rem;
-	min-width: 100%;
-	animation: loop 12s linear infinite;
-}
-.marquee__logos img {
-	display: block;
-	margin-inline: 2rem;
-}
-
-@keyframes loop {
+	gap: 3rem;
+	animation: infiniteScroll 10s linear infinite;
+  }
+  
+  /* Pause animation on hover */
+  /* .marquee__logos:hover {
+	animation-play-state: paused;
+  }
+   */
+  /* Smooth infinite scrolling effect */
+  @keyframes infiniteScroll {
 	from {
-		transform: translateX(0);
+	  transform: translateX(0);
 	}
 	to {
-		transform: translateX(-100%);
+	  transform: translateX(-50%);
+	}
+  }
+  
+
+@media (max-width: 768px) {
+	.marquee__logos {
+		animation-duration: 15s; /* Slower on mobile */
+	}
+}
+
+@media (min-width: 1024px) {
+	.marquee__logos {
+		animation-duration: 8s; /* Faster on desktop */
 	}
 }
