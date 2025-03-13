@@ -18,7 +18,7 @@ const SectionTwo = () => {
             Growing for Generations, and Regrowth.
           </h3>
           <p className="text-lg text-gray-600 leading-relaxed text-justify">
-          <b>Pahang</b>, the green heritage protected by the <b>Federal Constitution of Malaysia</b>, is home to this thriving 50-hectare estate. Blessed with strategic rivers and fertile land, it has flourished since 1999, nestled in the countryside of formerly British treasure town of Sungai Lembing. Committed to sustainable palm oil and beef production, we blend responsible farming practices with modern techniques to ensure high-quality edible exports while protecting the environment for generations.
+          <b>Pahang</b>, the Green Lung State protected by the <b>Federal Constitution of Malaysia</b>, is home to this thriving 50-hectare estate. Blessed with strategic rivers and fertile land, it has flourished since 1999, nestled in the countryside of formerly British treasure town of Sungai Lembing. Committed to sustainable palm oil and beef production, we blend responsible farming practices with modern techniques to ensure high-quality edible exports while protecting the environment for generations.
 
 
           </p>
