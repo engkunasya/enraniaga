@@ -1,6 +1,14 @@
 import React from 'react';
 
 const Navbar = () => {
+
+  const handleScrollToPartner = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: document.documentElement.scrollHeight * 0.75, // 75% of page height
+      behavior: "smooth",
+    });
+  };
   return (
     <nav className="fixed w-full top-0 z-10 shadow-md bg-black bg-opacity-20">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -15,7 +23,7 @@ const Navbar = () => {
             <a href="#home" className="text-white hover:text-gray-400 transition">Home</a>
           </li>
           <li>
-            <a href="#partners" className="text-white hover:text-gray-400 transition">Our Partners</a>
+            <a href="#partners" onClick={handleScrollToPartner} className="text-white hover:text-gray-400 transition">Our Partners</a>
           </li>
           <li>
             <a href="#about" className="text-white hover:text-gray-400 transition">About Us</a>
