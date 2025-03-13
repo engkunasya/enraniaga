@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in px-4">
-          Sustainable Excellence in Palm Oil Estate
+          Sustainable Excellence in Palm Oil & Estate
         </h1>
         <p className="text-lg md:text-2xl animate-slide-up">
           Harvesting National Commodity, Ensuring Future Sustainability
