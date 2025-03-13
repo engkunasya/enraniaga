@@ -20,7 +20,7 @@ const Footer = () => {
           </p><br/>
            {/* Mobile Info */}
            <p className="text-sm md:text-base">
-            Map:<br/>  <a href="https://maps.app.goo.gl/YjnXokngi5t8Zdf17" className="text-green-200 hover:text-blue-300">
+            Map:<br/>  <a href="https://maps.app.goo.gl/m5n5D4ihcxP8iP4j6" className="text-green-200 hover:text-blue-300">
               Google Maps
             </a>
           </p>
