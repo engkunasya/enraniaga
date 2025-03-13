@@ -15,7 +15,7 @@ const Partnership = () => {
   return (
     <div className="flex justify-center w-full overflow-hidden">
       <div className="flex flex-col items-center justify-center py-16 mt-10 max-w-6xl px-4">
-        <h2 className="text-center text-2xl font-bold mt-10 text-gray-800 mb-5">Our Partners</h2>
+        <h2 className="text-center text-2xl font-bold mt-10 text-gray-800 mb-5">Strategic Partners</h2>
 
         {/* Logos moving continuously */}
         <div className="logos__marquee w-full overflow-hidden px-4">
@@ -29,9 +29,9 @@ const Partnership = () => {
         {/* Static Logos */}
         <div className="mt-6 w-full flex justify-center overflow-hidden px-4">
           <div className="flex flex-wrap justify-center gap-16 max-w-6xl ">
-            <img src={logo1} alt="Partner 4" className="h-16" />
-            <img src={logo2} alt="Partner 5" className="h-16 rounded-lg" />
-            <img src={logo3} alt="Partner 6" className="h-16" />
+            <img src={logo1} alt="Partner 4" className="h-14" />
+            <img src={logo2} alt="Partner 5" className="h-14 rounded-lg" />
+            <img src={logo3} alt="Partner 6" className="h-14" />
           </div>
         </div>
       </div>
